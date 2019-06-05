@@ -7,7 +7,7 @@ if [ -z "$1" ]; then
 fi
 
 # 开启服务端口运行 /wxdt/bin/cli
-sed 's#enableServicePort:!1#enableServicePort:!!1#' -i /wxdt/package.nw/js/5498e660c05c574f739a28bd5d202cfa.js
+/wxdt/bin/fix_cli.sh
 
 # 将 /startup.sh 转到后台运行
 sed s%'exec /bin/tini -- /usr/bin/supervisord -n -c'%'/usr/bin/supervisord -c'% -i /startup.sh
