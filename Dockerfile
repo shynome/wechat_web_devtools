@@ -5,6 +5,7 @@ FROM dorowu/ubuntu-desktop-lxde-vnc:bionic
 ENV LANG C.UTF-8
 ENV DISPLAY :1.0
 ENV HOME /root
+ENV PATH="/wxdt/bin:${PATH}"
 RUN echo "Asia/Shanghai" > /etc/timezone
 RUN dpkg-reconfigure -f noninteractive tzdata
 
