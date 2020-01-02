@@ -48,8 +48,7 @@ RUN dpkg --add-architecture i386 \
 # RUN mkdir -p $HOME/.wine32 \
 #   && WINEARCH=win32 WINEPREFIX=$HOME/.wine32 winecfg
 
-# v1.02.1904091
-ARG VERSION="6de256c091544207a3d9c51556860971d9db87d1"
+ARG VERSION="v1.02.1910121"
 RUN wget -O /tmp/tmp.tgz https://github.com/cytle/wechat_web_devtools/archive/${VERSION}.tar.gz \
     && tar -xzf /tmp/tmp.tgz -C /tmp \
     && mv /tmp/wechat_web_devtools* /wxdt \
