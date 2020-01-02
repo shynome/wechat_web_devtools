@@ -1,3 +1,7 @@
+# Archive
+
+不再维护请使用 https://github.com/cytle/wechat_web_devtools
+
 # 微信开发者工具 Linux
 
 ### 源
